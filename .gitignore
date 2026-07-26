@@ -1,0 +1,12 @@
+# Build directories
+cmake-build-*/
+
+# File compilati
+*.o
+*.obj
+*.exe
+
+# File personali di CLion
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
