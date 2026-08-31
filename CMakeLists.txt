@@ -18,4 +18,4 @@ else()
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 endif()
 
-add_executable(Progetto_Histogram_Equalization main.cpp)
+add_executable(Progetto_Histogram_Equalization main.cpp aos_equalization.cpp aos_equalization.h STBImage.cpp STBImage.h equalization_utils.cpp equalization_utils.h)
