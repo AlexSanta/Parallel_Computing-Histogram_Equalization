@@ -1,7 +1,13 @@
+#ifndef EQUALIZATION_UTILS_H
+#define EQUALIZATION_UTILS_H
+
 #include <array>
 #include <cstdint>
-#include <cmath>
 
-std::array<int,256> compute_cdf(const std::array<int,256>& hist);
+constexpr int L = 256;
 
-std::array<uint8_t,256> compute_equalized_LUT(const std::array<int,256>& cdf, int numPixels);
+std::array<int,L> compute_cdf(const std::array<int,L>& hist);
+
+std::array<std::uint8_t,L> compute_equalized_LUT(const std::array<int,L>& cdf, int numPixels);
+
+#endif
